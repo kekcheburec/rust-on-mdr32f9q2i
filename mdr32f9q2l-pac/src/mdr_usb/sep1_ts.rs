@@ -1,0 +1,102 @@
+#[doc = "Register `SEP1_TS` reader"]
+pub struct R(crate::R<SEP1_TS_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<SEP1_TS_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl From<crate::R<SEP1_TS_SPEC>> for R {
+    #[inline(always)]
+    fn from(reader: crate::R<SEP1_TS_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `SEP1_TS` writer"]
+pub struct W(crate::W<SEP1_TS_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<SEP1_TS_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl From<crate::W<SEP1_TS_SPEC>> for W {
+    #[inline(always)]
+    fn from(writer: crate::W<SEP1_TS_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `SCTTYPE` reader - "]
+pub struct SCTTYPE_R(crate::FieldReader<u8, u8>);
+impl SCTTYPE_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        SCTTYPE_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SCTTYPE_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SCTTYPE` writer - "]
+pub struct SCTTYPE_W<'a> {
+    w: &'a mut W,
+}
+impl<'a> SCTTYPE_W<'a> {
+    #[doc = r"Writes raw bits to the field"]
+    #[inline(always)]
+    pub unsafe fn bits(self, value: u8) -> &'a mut W {
+        self.w.bits = (self.w.bits & !0x03) | (value as u32 & 0x03);
+        self.w
+    }
+}
+impl R {
+    #[doc = "Bits 0:1"]
+    #[inline(always)]
+    pub fn scttype(&self) -> SCTTYPE_R {
+        SCTTYPE_R::new((self.bits & 0x03) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:1"]
+    #[inline(always)]
+    pub fn scttype(&mut self) -> SCTTYPE_W {
+        SCTTYPE_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    #[inline(always)]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sep1_ts](index.html) module"]
+pub struct SEP1_TS_SPEC;
+impl crate::RegisterSpec for SEP1_TS_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [sep1_ts::R](R) reader structure"]
+impl crate::Readable for SEP1_TS_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [sep1_ts::W](W) writer structure"]
+impl crate::Writable for SEP1_TS_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets SEP1_TS to value 0"]
+impl crate::Resettable for SEP1_TS_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
+    }
+}

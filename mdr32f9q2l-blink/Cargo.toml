@@ -1,0 +1,12 @@
+[package]
+name = "mdr32f9q2l-blink"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.7.3"
+cortex-m-rt = "0.7.0"
+
+[dependencies.mdr32f9q2l-pac]
+path = "../mdr32f9q2l-pac"
+features = ["rt"]
