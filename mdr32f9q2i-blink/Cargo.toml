@@ -1,5 +1,5 @@
 [package]
-name = "mdr32f9q2l-blink"
+name = "mdr32f9q2i-blink"
 version = "0.1.0"
 edition = "2018"
 
@@ -7,6 +7,6 @@ edition = "2018"
 cortex-m = "0.7.3"
 cortex-m-rt = "0.7.0"
 
-[dependencies.mdr32f9q2l-pac]
-path = "../mdr32f9q2l-pac"
+[dependencies.mdr32f9q2i-pac]
+path = "../mdr32f9q2i-pac"
 features = ["rt"]

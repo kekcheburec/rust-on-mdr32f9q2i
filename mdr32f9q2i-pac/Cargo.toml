@@ -1,12 +1,12 @@
 [package]
-name = "mdr32f9q2l-pac"
+name = "mdr32f9q2i-pac"
 version = "0.1.0"
 edition = "2018"
-description = "Peripheral Access Crate for Milandr's mdr32f9q2l microcontroller"
+description = "Peripheral Access Crate for Milandr's mdr32f9q2i microcontroller"
 keywords = ["no-std", "arm", "cortex-m", "milandr", "peripherals"]
 license = "MIT"
-repository = "https://github.com/kekcheburec/mdr32f9q2l"
-documentation = "https://docs.rs/mdr32f9q2l"
+repository = "https://github.com/kekcheburec/mdr32f9q2i"
+documentation = "https://docs.rs/mdr32f9q2i"
 
 [dependencies]
 cortex-m = "0.7.3"

@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd">
     <vendor>Milandr</vendor>
     <vendorID>Milandr</vendorID>
-    <name>MDR32F9Q2L</name>
+    <name>MDR32F9Q2I</name>
     <version>1.0</version>
     <cpu>
         <name>CM3</name>

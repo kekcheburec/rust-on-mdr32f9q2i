@@ -12,7 +12,7 @@ fn panic(_: &core::panic::PanicInfo) -> ! {
 
 #[cortex_m_rt::entry]
 fn main() -> ! {
-    let p = mdr32f9q2l_pac::Peripherals::take().unwrap();
+    let p = mdr32f9q2i_pac::Peripherals::take().unwrap();
     let p_core = cortex_m::Peripherals::take().unwrap();
 
     p.MDR_RST_CLK.per_clock.write(|w| {
